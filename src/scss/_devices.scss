@@ -1,0 +1,61 @@
+// Media Query
+
+// Extra large devices (large desktops, 1200px and up)
+@include media-xl {
+
+  html,
+  body {
+    #navigation {
+      background: rgba(#fff, 0.7);
+
+      .navbar-brand {
+        .w-logo {
+          height: 80px;
+          width: 80px;
+        }
+      }
+
+      .active {
+        color: $primary-color;
+      }
+
+      .nav-link {
+        color: #000000;
+        font-weight: 500;
+        padding-right: 1em !important;
+        padding-left: 1em !important;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-lg {}
+
+// Medium devices (tablets, 768px and up)
+@include media-md {}
+
+// Small devices (landscape phones, 576px and up)
+@include media-sm {}
+
+// Extra small devices (portrait phones, less than 576px)
+@include media-xsm {
+
+  html,
+  body {
+    font-size: 0.85em;
+
+    h1,
+    h2,
+    h3 {
+      &.title {
+        font-size: 3.5em;
+      }
+
+      &.heading-lg {
+        font-size: 2em;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,20 @@
+// Navigation
+#navigation {
+  background: $secondary-color;
+
+  .navbar-brand {
+    .w-logo {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .nav-item {
+
+    .nav-link {
+      font-size: 0.9em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+  }
+}

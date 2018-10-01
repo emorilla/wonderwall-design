@@ -16,6 +16,42 @@
 </head>
 
 <body>
+  <nav id="navigation" class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a href="#!" class="navbar-brand">
+        <img src="assets/img/w-logo.png" alt="W Logo" class="w-logo">
+      </a>
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarCollapse" class="navbar-collapse collapse">
+        <hr class="bg-primary">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#!" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <section id="home-parallax" class="text-center">
     <div class="bg-parallax"></div>
     <div class="container h-100">
@@ -67,10 +103,13 @@
   </section>
   <!--Core Values-->
 
-  <section id="home-about" class="p-5 text-secondary">
+  <section id="home-about" class="py-5 text-secondary">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-6 align-self-center mb-5">
+          <img src="assets/img/iphoneX.png" alt="iPhoneX Logo" class="img-fluid">
+        </div>
+        <div class="col-md-6 align-self-center">
           <div class="text-center mb-5">
             <h1 class="heading-lg">Who We Are</h1>
             <span class="sep-line-sm mb-5"></span>
@@ -89,35 +128,35 @@
   </section>
   <!--About-->
 
-  <section id="milestone" class="py-5 text-center bg-secondary">
+  <section id="milestone" class="py-5 text-center bg-dark">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 py-4">
+        <div class="col-lg-3 col-sm-6 py-4">
           <div>
             <img src="assets/img/milestone/pizza.png" alt="Pizza Logo" class="milestone-logo">
             <span class="timer counter d-block" data-from="0" data-to="2498" data-speed="1500">0</span>
-            <h3 class="d-inline-block heading-sm">Pizza</h3>
+            <h3 class="d-inline-block heading-sm">Slice Of Pizza</h3>
           </div>
         </div>
-        <div class="col-md-3 py-4">
+        <div class="col-lg-3 col-sm-6 py-4">
           <div>
             <img src="assets/img/milestone/coffee-cup.png" alt="Coffee Logo" class="milestone-logo">
             <span class="timer counter d-block" data-from="0" data-to="1000" data-speed="1500">0</span>
             <h3 class="d-inline-block heading-sm">Cup Of Coffee</h3>
           </div>
         </div>
-        <div class="col-md-3 py-4">
+        <div class="col-lg-3 col-sm-6 py-4">
           <div>
             <img src="assets/img/milestone/layouts.png" alt="Layouts Logo" class="milestone-logo">
             <span class="timer counter d-block" data-from="0" data-to="700" data-speed="1500">0</span>
-            <h3 class="d-inline-block heading-sm">Layouts</h3>
+            <h3 class="d-inline-block heading-sm">Layout</h3>
           </div>
         </div>
-        <div class="col-md-3 py-4">
+        <div class="col-lg-3 col-sm-6 py-4">
           <div>
             <img src="assets/img/milestone/project.png" alt="Project Logo" class="milestone-logo">
             <span class="timer counter d-block" data-from="0" data-to="358" data-speed="1500">0</span>
-            <h3 class="d-inline-block heading-sm">Projects</h3>
+            <h3 class="d-inline-block heading-sm">Project</h3>
           </div>
         </div>
       </div>
@@ -125,7 +164,12 @@
   </section>
   <!--Milestone-->
 
-
+  <section id="main-footer" class="py-4 text-center">
+    <div class="container">
+      <p><small class="text-muted">&copy; 2018 Copyright Wonderwall Design Studio All rights reserved. Developed by:
+          <span class="text-primary">emorilla</span></small></p>
+    </div>
+  </section>
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>

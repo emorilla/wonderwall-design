@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+#navigation {
+  background: #1c1c1c; }
+  #navigation .navbar-brand .w-logo {
+    height: 40px;
+    width: 40px; }
+  #navigation .nav-item .nav-link {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+
 #home-parallax {
   height: 100vh;
   position: relative;
@@ -20,6 +30,43 @@
   #home-parallax .home-content {
     position: relative;
     z-index: 2; }
+
+@media (min-width: 1200px) {
+  html #navigation,
+  body #navigation {
+    background: rgba(255, 255, 255, 0.7); }
+    html #navigation .navbar-brand .w-logo,
+    body #navigation .navbar-brand .w-logo {
+      height: 80px;
+      width: 80px; }
+    html #navigation .active,
+    body #navigation .active {
+      color: #007acc; }
+    html #navigation .nav-link,
+    body #navigation .nav-link {
+      color: #000000;
+      font-weight: 500;
+      padding-right: 1em !important;
+      padding-left: 1em !important; } }
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  html,
+  body {
+    font-size: 0.85em; }
+    html h1.title,
+    html h2.title,
+    html h3.title,
+    body h1.title,
+    body h2.title,
+    body h3.title {
+      font-size: 3.5em; }
+    html h1.heading-lg,
+    html h2.heading-lg,
+    html h3.heading-lg,
+    body h1.heading-lg,
+    body h2.heading-lg,
+    body h3.heading-lg {
+      font-size: 2em; } }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -73,10 +120,11 @@ h3 {
     .boxes i.fa-heart {
       color: #007acc; }
 
-#milestone .milestone-logo {
-  height: 80px;
-  width: 80px; }
-
-#milestone .counter {
-  font-size: 2em;
-  color: #fff; }
+#milestone {
+  color: #ffff; }
+  #milestone .milestone-logo {
+    height: 80px;
+    width: 80px; }
+  #milestone .counter {
+    font-size: 2em;
+    color: #007acc; }

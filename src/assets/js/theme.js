@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  // Navigation Shrink To Fit
+
+
   // Init Scroll Magic
   const controller = new ScrollMagic.Controller();
 
@@ -15,7 +18,6 @@ $(document).ready(function () {
     .addTo(controller);
 
   // CountTo
-
   if ($.fn.countTo) {
     const $timer = $('.timer');
     $timer.one('inview', function (isInView) {
