@@ -29,24 +29,30 @@ body {
   padding: 0;
   line-height: 1.5; }
 
-h1.title,
-h2.title,
-h3.title {
+h1,
+h2,
+h3 {
   font-family: 'Lato', sans-serif;
-  font-size: 5em;
-  color: #000;
-  font-weight: 100;
-  letter-spacing: 0.25em;
   text-transform: uppercase; }
-
-h1.heading-sm,
-h2.heading-sm,
-h3.heading-sm {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 0.95em;
-  letter-spacing: 0.25em;
-  text-transform: uppercase; }
+  h1.title,
+  h2.title,
+  h3.title {
+    font-size: 5em;
+    color: #000;
+    font-weight: 100;
+    letter-spacing: 0.15em; }
+  h1.heading-lg,
+  h2.heading-lg,
+  h3.heading-lg {
+    font-size: 2.5em;
+    font-weight: 100;
+    letter-spacing: 0.2em; }
+  h1.heading-sm,
+  h2.heading-sm,
+  h3.heading-sm {
+    font-weight: 300;
+    font-size: 0.95em;
+    letter-spacing: 0.25em; }
 
 .sep-line-sm {
   display: inline-block;
@@ -65,4 +71,4 @@ h3.heading-sm {
     color: #000;
     margin-bottom: 30px; }
     .boxes i.fa-heart {
-      color: red; }
+      color: #007acc; }
