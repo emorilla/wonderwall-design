@@ -5,6 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
 
+// Components
+@import 'parallax';
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.95em;
@@ -13,9 +16,6 @@ body {
   padding: 0;
   line-height: 1.5;
 }
-
-// Components
-@import 'parallax';
 
 // Headings
 h1,
@@ -26,6 +26,14 @@ h3 {
     font-size: 5em;
     color: #000;
     font-weight: 100;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+
+  &.heading-sm {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 0.95em;
     letter-spacing: 0.25em;
     text-transform: uppercase;
   }
@@ -40,7 +48,21 @@ h3 {
   border-radius: 10px;
 }
 
-
 .h-100 {
   min-height: 100vh;
+}
+
+// Core Values
+.boxes {
+  margin-bottom: 30px;
+
+  i {
+    font-size: 3.5em;
+    color: #000;
+    margin-bottom: 30px;
+
+    &.fa-heart {
+      color: red;
+    }
+  }
 }
