@@ -72,3 +72,11 @@ h3 {
     margin-bottom: 30px; }
     .boxes i.fa-heart {
       color: #007acc; }
+
+#milestone .milestone-logo {
+  height: 80px;
+  width: 80px; }
+
+#milestone .counter {
+  font-size: 2em;
+  color: #fff; }

@@ -13,4 +13,15 @@ $(document).ready(function () {
       ease: Power0.easeNone
     }))
     .addTo(controller);
+
+  // CountTo
+
+  if ($.fn.countTo) {
+    const $timer = $('.timer');
+    $timer.one('inview', function (isInView) {
+      if (isInView) {
+        $(this).countTo();
+      }
+    });
+  }
 });
