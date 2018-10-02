@@ -90,3 +90,21 @@ h3 {
     color: $primary-color;
   }
 }
+
+// Scroll To Top
+.scroll-to-top {
+  background-color: #000;
+  border-radius: 2px;
+  display: none;
+  position: fixed;
+  right: 35px;
+  top: 94%;
+  text-align: center;
+  z-index: 999;
+
+  i {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 6px;
+  }
+}

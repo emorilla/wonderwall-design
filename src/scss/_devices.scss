@@ -6,31 +6,97 @@
   html,
   body {
     #navigation {
-      background: rgba(#fff, 0.7);
+      padding: 5px 0;
+      @include easeOut;
+      background: transparent;
 
-      .navbar-brand {
-        .w-logo {
-          height: 80px;
-          width: 80px;
+      .current {
+        display: inline-block;
+        color: $primary-color !important;
+        border-bottom: 2px solid $secondary-color;
+        padding-bottom: 0;
+      }
+
+      &.navbar-shrink {
+        background: $secondary-color;
+        padding: 5px 0;
+
+        .navbar-brand {
+          .w-logo {
+            height: 45px;
+            width: 45px;
+            @include easeOut;
+          }
+        }
+
+        .current {
+          display: inline-block;
+          color: $primary-color !important;
+          border-bottom: 2px solid #fff;
+          padding-bottom: 0;
+        }
+
+        .nav-item {
+          .nav-link {
+            display: inline-block;
+            color: #fff;
+          }
         }
       }
 
-      .active {
-        color: $primary-color;
+      .navbar-brand {
+        .w-logo {
+          height: 70px;
+          width: 70px;
+        }
+      }
+
+      .nav-item {
+        padding-right: 1em !important;
+        padding-left: 1em !important;
       }
 
       .nav-link {
+        display: inline-block;
         color: #000000;
         font-weight: 500;
-        padding-right: 1em !important;
-        padding-left: 1em !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-bottom: 0 !important;
       }
     }
   }
 }
 
 // Large devices (desktops, 992px and up)
-@include media-lg {}
+@include media-lg {
+
+  html,
+  body {
+
+    .current {
+      display: inline-block;
+      color: $primary-color;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 0;
+    }
+
+    #navigation {
+
+      .nav-item {
+        padding-right: 1em;
+        padding-left: 1em;
+
+        .nav-link {
+          display: inline-block;
+          padding-right: 0;
+          padding-left: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
 
 // Medium devices (tablets, 768px and up)
 @include media-md {}

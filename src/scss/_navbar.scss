@@ -4,17 +4,32 @@
 
   .navbar-brand {
     .w-logo {
-      height: 40px;
-      width: 40px;
+      height: 35px;
+      width: 35px;
     }
+  }
+
+  .current {
+    display: inline-block;
+    color: $primary-color;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0;
   }
 
   .nav-item {
 
     .nav-link {
+      display: inline-block;
       font-size: 0.9em;
       text-transform: uppercase;
       letter-spacing: 0.1em;
+      margin-bottom: 1em;
+
+      &:hover {
+        display: inline-block;
+        color: $primary-color;
+        @include easeOut;
+      }
     }
   }
 }

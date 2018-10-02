@@ -1,6 +1,25 @@
 $(document).ready(function () {
   // Navigation Shrink To Fit
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 80) {
+      $('#navigation').addClass('navbar-shrink');
+      // Scroll to top
+      $('.scroll-to-top').fadeIn();
 
+    } else {
+      $('#navigation').removeClass('navbar-shrink');
+
+      // Scroll to top
+      $('.scroll-to-top').fadeOut();
+    }
+  });
+
+  // Smooth Scrolling
+  $('.page-to-top').click(function () {
+    $('html', 'body').animate({
+      scrollTop: 0
+    }, 1000, 'easeInOutExpo');
+  });
 
   // Init Scroll Magic
   const controller = new ScrollMagic.Controller();
