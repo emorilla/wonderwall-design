@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // Navigation Shrink To Fit
   $(window).scroll(function () {
     if ($(document).scrollTop() > 80) {
@@ -15,11 +16,18 @@ $(document).ready(function () {
   });
 
   // Smooth Scrolling
-  $('.page-to-top').click(function () {
-    $('html', 'body').animate({
+  $('.page-scroll').click(function (e) {
+
+    $('html, body').animate({
       scrollTop: 0
     }, 1000, 'easeInOutExpo');
-  });
+
+    e.preventDefault();
+
+    $('.navbar-collapse').collapse('hide');
+  })
+
+
 
   // Init Scroll Magic
   const controller = new ScrollMagic.Controller();
