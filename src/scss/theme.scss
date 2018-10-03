@@ -9,6 +9,7 @@
 @import 'config';
 @import 'navbar';
 @import 'parallax';
+@import 'gallery';
 @import 'devices';
 
 body {
@@ -78,7 +79,9 @@ h3 {
 
 // Milestone
 #milestone {
+  background-color: $secondary-color;
   color: #ffff;
+
 
   .milestone-logo {
     height: 80px;

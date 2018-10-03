@@ -53,4 +53,9 @@ $(document).ready(function () {
       }
     });
   }
+
+  // Image Gallery
+  baguetteBox.run('.compact-gallery', {
+    animation: 'slideIn'
+  });
 });
