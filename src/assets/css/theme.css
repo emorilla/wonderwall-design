@@ -263,6 +263,9 @@ h3 {
     font-size: 2.5em;
     margin-bottom: 10px; }
 
+#team img {
+  margin-top: -50px; }
+
 .scroll-to-top {
   background-color: #000;
   border-radius: 2px;
