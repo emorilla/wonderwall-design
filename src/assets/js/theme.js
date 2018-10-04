@@ -38,7 +38,7 @@ $(document).ready(function () {
       triggerHook: 1,
       duration: '200%'
     })
-    .setTween(TweenMax.from('.bg-parallax', 1, {
+    .setTween(TweenMax.from('.bg-parallax, .bg-parallax-a', 1, {
       y: '-50%',
       ease: Power0.easeNone
     }))
