@@ -200,6 +200,13 @@ h3 {
   background-color: #007acc;
   border-radius: 10px; }
 
+.sep-line-xsm {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #007acc;
+  border-radius: 10px; }
+
 .h-100 {
   min-height: 100vh; }
 
@@ -212,15 +219,37 @@ h3 {
     .boxes i.fa-heart {
       color: #007acc; }
 
-#milestone {
-  background-color: #1c1c1c;
-  color: #ffff; }
-  #milestone .milestone-logo {
-    height: 80px;
-    width: 80px; }
-  #milestone .counter {
-    font-size: 2em;
-    color: #007acc; }
+#milestone .milestone-logo {
+  height: 80px;
+  width: 80px; }
+
+#milestone .counter {
+  font-size: 2em;
+  color: #007acc; }
+
+#contact-us {
+  position: relative; }
+  #contact-us:after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: url("../img/gallery/image-7.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px); }
+  #contact-us .card:hover {
+    background: #f1f1f1;
+    transition: all 0.5s ease-out; }
+  #contact-us i {
+    color: #1c1c1c;
+    font-size: 2.5em;
+    margin-bottom: 10px; }
 
 .scroll-to-top {
   background-color: #000;
