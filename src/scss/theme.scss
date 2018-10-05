@@ -33,7 +33,6 @@ h3 {
     color: #000;
     font-weight: 100;
     letter-spacing: 0.15em;
-
   }
 
   &.heading-lg {
@@ -70,6 +69,27 @@ h3 {
   min-height: 100vh;
 }
 
+// Preloader
+.pace {
+  -webkit-pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+
+  .pace-progress {
+    background-color: $primary-color;
+    height: 2px;
+    position: fixed;
+    right: 100%;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+  }
+}
+
+.pace-inactive {
+  display: none;
+}
+
 // Core Values
 .boxes {
   margin-bottom: 30px;
@@ -87,7 +107,6 @@ h3 {
 
 // Milestone
 #milestone {
-
   .milestone-logo {
     height: 80px;
     width: 80px;
@@ -136,6 +155,18 @@ h3 {
 #team {
   img {
     margin-top: -50px;
+  }
+
+  .fab {
+    font-size: 20px;
+    color: $primary-color;
+  }
+
+  .card:hover {
+    background: $secondary-color;
+    border: 1px solid $primary-color;
+    color: #fff;
+    @include easeOut;
   }
 }
 

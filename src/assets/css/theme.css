@@ -222,6 +222,22 @@ h3 {
 .h-100 {
   min-height: 100vh; }
 
+.pace {
+  -webkit-pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none; }
+  .pace .pace-progress {
+    background-color: #007acc;
+    height: 2px;
+    position: fixed;
+    right: 100%;
+    top: 0;
+    width: 100%;
+    z-index: 2000; }
+
+.pace-inactive {
+  display: none; }
+
 .boxes {
   margin-bottom: 30px; }
   .boxes i {
@@ -265,6 +281,16 @@ h3 {
 
 #team img {
   margin-top: -50px; }
+
+#team .fab {
+  font-size: 20px;
+  color: #007acc; }
+
+#team .card:hover {
+  background: #1c1c1c;
+  border: 1px solid #007acc;
+  color: #fff;
+  transition: all 0.5s ease-out; }
 
 .scroll-to-top {
   background-color: #000;
