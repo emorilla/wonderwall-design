@@ -1,0 +1,161 @@
+// Media Query
+
+// Extra large devices (large desktops, 1200px and up)
+@include media-xl {
+
+  html,
+  body {
+    #navigation {
+      padding: 5px 0;
+      @include easeOut;
+      background: transparent;
+
+      .current {
+        display: inline-block;
+        color: $primary-color !important;
+        border-bottom: 2px solid $secondary-color;
+        padding-bottom: 0;
+      }
+
+      &.navbar-shrink {
+        background: $secondary-color;
+        padding: 5px 0;
+
+        .navbar-brand {
+          .w-logo {
+            height: 45px;
+            width: 45px;
+            @include easeOut;
+          }
+        }
+
+        .current {
+          display: inline-block;
+          color: $primary-color !important;
+          border-bottom: 2px solid #fff;
+          padding-bottom: 0;
+        }
+
+        .nav-item {
+          .nav-link {
+            display: inline-block;
+            color: #fff;
+          }
+        }
+      }
+
+      .navbar-brand {
+        .w-logo {
+          height: 70px;
+          width: 70px;
+        }
+      }
+
+      .nav-item {
+        padding-right: 1em !important;
+        padding-left: 1em !important;
+      }
+
+      .nav-link {
+        display: inline-block;
+        color: #000000;
+        font-weight: 500;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-lg {
+
+  html,
+  body {
+
+    .current {
+      display: inline-block;
+      color: $primary-color;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 0;
+    }
+
+    #navigation {
+
+      .nav-item {
+        padding-right: 1em;
+        padding-left: 1em;
+
+        .nav-link {
+          display: inline-block;
+          padding-right: 0;
+          padding-left: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-md {}
+
+// Small devices (landscape phones, 576px and up)
+@include media-sm {
+
+  html,
+  body {
+    #milestone {
+      .milestone-logo {
+        height: 50px;
+        width: 50px;
+      }
+
+      .counter {
+        font-size: 1.5em;
+      }
+
+      .heading-sm {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@include media-xsm {
+
+  html,
+  body {
+    font-size: 0.85em;
+
+    h1,
+    h2,
+    h3 {
+      &.title {
+        font-size: 3.5em;
+      }
+
+      &.heading-lg {
+        font-size: 2em;
+      }
+    }
+
+    #milestone {
+      .milestone-logo {
+        height: 30px;
+        width: 30px;
+      }
+
+      .counter {
+        font-size: 1em;
+      }
+
+      .heading-sm {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+}
