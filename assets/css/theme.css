@@ -50,6 +50,42 @@
     width: 100%;
     height: 150%;
     margin-top: 100px; }
+  #home-parallax .bg-parallax-b {
+    background: url("../img/services/service.jpeg") no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+    width: 100%;
+    height: 150%;
+    margin-top: 100px; }
+  #home-parallax .bg-parallax-b {
+    background: url("../img/services/service.jpeg") no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+    width: 100%;
+    height: 150%;
+    margin-top: 100px; }
+  #home-parallax .bg-parallax-c {
+    background: url("../img/career.jpeg") no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+    width: 100%;
+    height: 150%;
+    margin-top: 100px; }
   #home-parallax .home-content {
     position: relative;
     z-index: 2; }
@@ -131,6 +167,22 @@
       padding-left: 0;
       margin-bottom: 0; } }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  html h1.heading-md,
+  html h2.heading-md,
+  html h3.heading-md,
+  html h4.heading-md,
+  html h5.heading-md,
+  body h1.heading-md,
+  body h2.heading-md,
+  body h3.heading-md,
+  body h4.heading-md,
+  body h5.heading-md {
+    font-size: 1.2em; }
+  html .lead,
+  body .lead {
+    font-size: 0.95em; } }
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   html #milestone .milestone-logo,
   body #milestone .milestone-logo {
@@ -161,6 +213,9 @@
     body h2.heading-lg,
     body h3.heading-lg {
       font-size: 2em; }
+    html .lead,
+    body .lead {
+      font-size: 0.95em; }
     html #milestone .milestone-logo,
     body #milestone .milestone-logo {
       height: 30px;
@@ -196,6 +251,12 @@ h3 {
   h2.heading-lg,
   h3.heading-lg {
     font-size: 2.5em;
+    font-weight: 100;
+    letter-spacing: 0.2em; }
+  h1.heading-md,
+  h2.heading-md,
+  h3.heading-md {
+    font-size: 1.5em;
     font-weight: 100;
     letter-spacing: 0.2em; }
   h1.heading-sm,

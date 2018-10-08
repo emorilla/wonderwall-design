@@ -99,13 +99,33 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@include media-md {}
+@include media-md {
+
+  html,
+  body {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      &.heading-md {
+        font-size: 1.2em;
+      }
+    }
+
+    .lead {
+      font-size: 0.95em;
+    }
+  }
+}
 
 // Small devices (landscape phones, 576px and up)
 @include media-sm {
 
   html,
   body {
+
     #milestone {
       .milestone-logo {
         height: 50px;
@@ -140,6 +160,11 @@
       &.heading-lg {
         font-size: 2em;
       }
+
+    }
+
+    .lead {
+      font-size: 0.95em;
     }
 
     #milestone {
