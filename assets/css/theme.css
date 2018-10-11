@@ -147,7 +147,10 @@
       font-weight: 500;
       padding-right: 0 !important;
       padding-left: 0 !important;
-      margin-bottom: 0 !important; } }
+      margin-bottom: 0 !important; }
+  html #blog,
+  body #blog {
+    padding-top: 150px; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   html .current,
@@ -368,5 +371,5 @@ h3 {
     margin: 0 6px; }
 
 #blog {
-  padding-top: 170px;
-  padding-bottom: 80px; }
+  padding-top: 80px;
+  padding-bottom: 20px; }
