@@ -199,3 +199,24 @@ h3 {
   padding-top: 80px;
   padding-bottom: 20px;
 }
+
+// Social
+#social-media {
+
+  .fab {
+    font-size: 3em;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    color: $primary-color;
+    border-radius: 0.8em;
+    background-color: $secondary-color;
+    /* or 50% width & line-height */
+
+    &:hover {
+      background: $primary-color;
+      @include easeOut;
+      color: #fff;
+    }
+  }
+}
